@@ -1,0 +1,7 @@
+name: Lint proto
+on: [pull_request]
+jobs:
+  lint-protos:
+    - uses: actions/checkout@v3
+    - uses: bufbuild/buf-setup-action@v1
+    - uses: bufbuild/buf-lint-action@v1
