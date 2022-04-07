@@ -1,5 +1,9 @@
 name: Lint proto
-on: [pull_request]
+on:
+  push:
+    paths:
+      - "**.proto"
+      - ".github/workflows/lint.yml"
 jobs:
   lint-protos:
     runs-on: ubuntu-latest
