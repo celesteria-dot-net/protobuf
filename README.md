@@ -6,4 +6,4 @@ This repository is a collection of protobuf.
 
 |File|Description|
 |---|---|
-|[Post](./post.proto)|Meta info for posts of my blog.|
+|[Post](./post)|Meta info for posts of my blog.|
