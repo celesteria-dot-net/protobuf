@@ -1,7 +1,13 @@
 name: Lint proto
-on: [pull_request]
+on:
+  push:
+    paths:
+      - "**.proto"
+      - ".github/workflows/lint.yml"
 jobs:
   lint-protos:
-    - uses: actions/checkout@v3
-    - uses: bufbuild/buf-setup-action@v1
-    - uses: bufbuild/buf-lint-action@v1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: bufbuild/buf-setup-action@v1
+      - uses: bufbuild/buf-lint-action@v1
