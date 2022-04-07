@@ -1,5 +1,5 @@
 syntax = "proto3";
-package posts;
+package my_home;
 
 import "google/protobuf/timestamp.proto";
 
