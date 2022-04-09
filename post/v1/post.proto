@@ -1,13 +1,11 @@
 syntax = "proto3";
 package post.v1;
 
-import "google/protobuf/timestamp.proto";
-
 message PostMeta {
   string title = 1;
   string description = 2;
   string image = 3;
   repeated string tags = 4;
-  google.protobuf.Timestamp created_date = 5;
-  google.protobuf.Timestamp updated_date = 6;
+  string created_date = 5;
+  optional string updated_date = 6;
 }
