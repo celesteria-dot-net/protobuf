@@ -1,11 +1,17 @@
 syntax = "proto3";
 package post_meta;
 
+message Date {
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
+}
+
 message PostMeta {
   string title = 1;
   string description = 2;
   optional string image = 3;
   repeated string tags = 4;
-  string created_date = 5;
-  optional string updated_date = 6;
+  Date created_date = 5;
+  optional Date updated_date = 6;
 }
