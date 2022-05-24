@@ -1,5 +1,5 @@
 syntax = "proto3";
-package post.v1;
+package post_meta;
 
 message PostMeta {
   string title = 1;
