@@ -1,0 +1,10 @@
+syntax = "proto3";
+package post;
+
+import "post_meta.proto";
+
+message Post {
+  string id = 1;
+  string content  = 2;
+  post_meta.PostMeta meta = 3;
+}

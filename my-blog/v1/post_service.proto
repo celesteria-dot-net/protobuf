@@ -1,0 +1,24 @@
+syntax = "proto3";
+package post_service;
+
+import "post.proto";
+
+service PostService {
+  rpc ListPosts(ListPostsRequest) returns (ListPostsResponse);
+
+  rpc GetPost(GetPostRequest) returns (post.Post);
+}
+
+message ListPostsRequest {
+  string parent = 1;
+  int32 page_size = 2;
+  string page_token = 3;
+}
+
+message ListPostsResponse {
+  repeated post.Post Posts = 1;
+}
+
+message GetPostRequest {
+  string id = 1;
+}
