@@ -12,7 +12,7 @@ service PostService {
 message ListPostsRequest {}
 
 message ListPostsResponse {
-  repeated post.Post Posts = 1;
+  repeated post.Post posts = 1;
 }
 
 message GetPostRequest {
