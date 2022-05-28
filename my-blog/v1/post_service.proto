@@ -9,11 +9,7 @@ service PostService {
   rpc GetPost(GetPostRequest) returns (post.Post);
 }
 
-message ListPostsRequest {
-  string parent = 1;
-  int32 page_size = 2;
-  string page_token = 3;
-}
+message ListPostsRequest {}
 
 message ListPostsResponse {
   repeated post.Post Posts = 1;
