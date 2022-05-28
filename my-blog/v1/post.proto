@@ -10,6 +10,6 @@ message Post {
   string content  = 4;
   optional string image = 5;
   repeated string tags = 6;
-  Date created_date = 7;
-  optional Date updated_date = 8;
+  date.Date created_date = 7;
+  optional date.Date updated_date = 8;
 }
