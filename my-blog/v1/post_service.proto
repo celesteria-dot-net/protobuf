@@ -16,5 +16,5 @@ message ListPostsResponse {
 }
 
 message GetPostRequest {
-  string id = 1;
+  string post_id = 1;
 }
