@@ -2,14 +2,11 @@ syntax = "proto3";
 package post;
 
 import "date.proto";
+import "post_meta.proto";
 
 message Post {
   string id = 1;
   string title = 2;
-  optional string description = 3;
-  string content  = 4;
-  optional string thumbnail = 5;
-  repeated string tags = 6;
-  date.Date created_date = 7;
-  optional date.Date updated_date = 8;
+  string content  = 3;
+  post_meta.PostMeta meta = 4;
 }

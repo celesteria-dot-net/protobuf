@@ -1,0 +1,12 @@
+syntax = "proto3";
+package post_meta;
+
+import "date.proto";
+
+message PostMeta {
+  optional string description = 1;
+  optional string thumbnail = 2;
+  repeated string tags = 3;
+  date.Date created_date = 4;
+  optional date.Date updated_date = 5;
+}
